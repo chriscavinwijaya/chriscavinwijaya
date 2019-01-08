@@ -66,7 +66,16 @@ header {
 .about-button .button img {
   width: 50%;
   height: auto;
+  opacity: 0.5;
 }
+
+ /*arrow opacity*/
+   .about-button .button img:hover {
+    opacity: 1;
+    transition: 0.6s;
+    transition-timing-function: ease-in-out;
+  }
+  /**/
 
 /* Nav Section */
 nav {
@@ -241,7 +250,19 @@ nav .name h1 {
       margin: 0 5%;
     }
 
+    .text2 .desktop {
+      display: none;
+    }
+
   }
+
+  /* About Desktop */
+  @media only screen and (min-width:481px) {
+    .text2 .mobile {
+      display: none;
+    }
+  }
+
 
 /*Galleria Section */
 #Galleria {
@@ -391,6 +412,11 @@ nav .name h1 {
       min-height: 200px;
     }
 
+    #Galleria #Galleria-Mobile .button {
+        background-color: orange;
+        opacity: 0.85;
+      }
+
   }
 
 
@@ -481,7 +507,12 @@ nav .name h1 {
 }
 
   /* Giving Hover */
-  .give-box:hover {
+  #Giving .give-box:hover {
+    transition: 1s;
+    opacity: 1;
+  }
+
+  #Giving .givebox:active {
     transition: 1s;
     opacity: 1;
   }
@@ -509,6 +540,7 @@ nav .name h1 {
 
     #Giving .give-box {
       padding: 25px 0;
+      opacity: 0.85;
     }
 
     .give-box .HFH18 {
@@ -520,6 +552,7 @@ nav .name h1 {
       width: 225px;
       height: 225px;
     }
+
   }
 
 
